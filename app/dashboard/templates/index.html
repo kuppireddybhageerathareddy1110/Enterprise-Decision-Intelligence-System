@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enterprise Decision Intelligence System</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <h1>Enterprise Decision Intelligence System</h1>
+  <p class="subtitle">
+    Decision-oriented insights for enterprise leadership
+  </p>
+</header>
+
+<!-- DECISION INPUTS -->
+<section class="panel">
+  <h2>What-If Scenario Simulation</h2>
+
+  <div class="inputs">
+    <input id="revenueInput" type="number" placeholder="Revenue (₹)">
+    <input id="costInput" type="number" placeholder="Cost (₹)">
+    <input id="empInput" type="number" placeholder="Employees">
+    <button onclick="calculate()">Simulate Impact</button>
+  </div>
+
+  <p id="calcResult" class="result"></p>
+</section>
+
+<!-- FILTERS -->
+<section class="panel">
+  <h2>Department Filter</h2>
+  <select id="deptFilter" onchange="loadFilteredKPIs()">
+    <option value="all">All Departments</option>
+    <option value="Sales">Sales</option>
+    <option value="Marketing">Marketing</option>
+    <option value="Operations">Operations</option>
+    <option value="IT">IT</option>
+    <option value="HR">HR</option>
+  </select>
+</section>
+
+<!-- EXECUTIVE SUMMARY -->
+<section class="panel">
+  <h2>Executive Summary</h2>
+
+  <div class="grid">
+    <div class="card">
+      <p>Total Revenue</p>
+      <h2 id="revenue">Loading…</h2>
+      <p class="delta" id="revenueDelta">—</p>
+    </div>
+
+    <div class="card">
+      <p>Total Profit</p>
+      <h2 id="profit">Loading…</h2>
+      <p class="delta" id="profitDelta">—</p>
+    </div>
+
+    <div class="card">
+      <p>Top Performing Department</p>
+      <h2 id="department">Loading…</h2>
+    </div>
+  </div>
+</section>
+
+<!-- SYSTEM RECOMMENDATION -->
+<section class="panel decision">
+  <h2>System Recommendation</h2>
+  <p id="decisionMessage">Analyzing enterprise performance…</p>
+  <p id="decisionConfidence" class="confidence"></p>
+</section>
+
+<!-- ANALYTICS -->
+<section class="panel">
+  <h2>Performance Analytics</h2>
+  <canvas id="revenueChart" width="720" height="300"></canvas>
+  <p class="subtitle">
+    Department-wise profit distribution highlighting performance gaps.
+  </p>
+</section>
+
+<!-- SCENARIO COMPARISON -->
+<section class="panel">
+  <h2>Scenario Comparison</h2>
+
+  <div class="inputs">
+    <input id="curRev" placeholder="Current Revenue">
+    <input id="curCost" placeholder="Current Cost">
+    <input id="scRev" placeholder="Scenario Revenue">
+    <input id="scCost" placeholder="Scenario Cost">
+    <button onclick="compareScenario()">Compare Scenario</button>
+  </div>
+
+  <p id="scenarioResult" class="result"></p>
+</section>
+
+<!-- ACTIONS -->
+<section class="panel actions">
+  <button onclick="exportCSV()">Export Decision Report (CSV)</button>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/dashboard.js"></script>
+
+</body>
+</html>

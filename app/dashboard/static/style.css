@@ -1,0 +1,137 @@
+/* ---------- GLOBAL ---------- */
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(180deg, #f8fafc, #eef2f7);
+  padding: 40px;
+  color: #0f172a;
+}
+
+h1 {
+  font-size: 34px;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  margin-bottom: 40px;
+}
+
+/* ---------- PANELS ---------- */
+.panel {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  margin-bottom: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- INPUTS ---------- */
+.inputs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.inputs input,
+select {
+  padding: 10px;
+  width: 180px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+}
+
+button {
+  padding: 10px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+/* ---------- GRID & CARDS ---------- */
+.grid {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  background: #f9fafb;
+  padding: 20px;
+  width: 260px;
+  border-radius: 12px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.card h2 {
+  font-size: 26px;
+  margin-top: 8px;
+}
+
+/* ---------- DELTAS ---------- */
+.delta {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.delta.positive {
+  color: #166534;
+}
+
+.delta.negative {
+  color: #7f1d1d;
+}
+
+/* ---------- DECISION ---------- */
+.decision {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.decision.good {
+  color: #166534;
+}
+
+.decision.warning {
+  color: #92400e;
+}
+
+.decision.critical {
+  color: #7f1d1d;
+}
+
+.confidence {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* ---------- RESULTS ---------- */
+.result {
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+/* ---------- ACTIONS ---------- */
+.actions {
+  text-align: right;
+}
