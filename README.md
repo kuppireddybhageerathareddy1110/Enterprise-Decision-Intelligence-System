@@ -209,5 +209,8 @@ Focus Areas: Data Science, Decision Intelligence, Enterprise Systems
 This project is for educational and demonstration purposes.
 
 
+<img width="1869" height="783" alt="image" src="https://github.com/user-attachments/assets/2a892b3d-6fbf-4102-ab79-01451d7bb253" />
+<img width="1839" height="951" alt="image" src="https://github.com/user-attachments/assets/2797de80-f8f8-448f-aacb-5753748cd1c6" />
+
 
 
